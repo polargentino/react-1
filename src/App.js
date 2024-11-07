@@ -7,16 +7,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Vamos polito que pronto lo lograremos!!!!
-          YA LO TENEMOS!!! VAMOS A GANAR!!!!!
+          CURSOS DE ELECTRONICA EN LA ESC. DOMINGO CULLEN 637
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://polargentino.github.io/escuela637-1/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Estudia con nosotros
         </a>
       </header>
     </div>
