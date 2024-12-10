@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          CURSOS DE ELECTRONICA EN LA ESC. DOMINGO CULLEN 637
+          CURSO DE DISEÑO WEB EN LA ESC. DOMINGO CULLEN 637
         </p>
         <a
           className="App-link"
