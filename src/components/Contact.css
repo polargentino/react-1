@@ -1,0 +1,101 @@
+/* Contact.css */
+
+.contact {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Asegura que el contenedor no exceda el ancho */
+  }
+  
+  .contact h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact label {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .contact input, .contact textarea {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .contact button {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* El botón ocupará todo el ancho en dispositivos pequeños */
+  }
+  
+  .contact button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Media Queries para hacer el diseño responsivo */
+  
+  /* Pantallas pequeñas (móviles) */
+  @media (max-width: 600px) {
+    .contact {
+      padding: 15px;
+      margin: 20px;
+    }
+  
+    .contact h2 {
+      font-size: 1.5rem; /* Ajusta el tamaño del título en pantallas pequeñas */
+    }
+  
+    .contact input, .contact textarea {
+      font-size: 0.9rem; /* Ajusta el tamaño de los campos de entrada */
+    }
+  
+    .contact button {
+      font-size: 1rem; /* Asegura que el tamaño del botón sea adecuado */
+    }
+  }
+  
+  /* Pantallas medianas (tablets) */
+  @media (max-width: 768px) {
+    .contact {
+      padding: 20px;
+      max-width: 500px; /* Ajusta el ancho máximo para tablets */
+    }
+  
+    .contact h2 {
+      font-size: 1.75rem;
+    }
+  
+    .contact input, .contact textarea {
+      font-size: 1rem;
+    }
+  
+    .contact button {
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,106 @@
+/* Header.css */
+
+.App-header {
+  background-color: #282c34;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.App-logo {
+  height: 80px;
+  pointer-events: none;
+}
+
+.App-header h1 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.App-header h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.App-header p {
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.App-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #61dafb;
+  background-color: #333;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.App-link:hover {
+  background-color: #61dafb;
+  color: #333;
+}
+
+/* Media Queries para hacerlo responsivo */
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  .App-header {
+    padding: 20px;
+  }
+
+  .App-logo {
+    height: 60px;
+  }
+
+  .App-header h1 {
+    font-size: 2rem;
+  }
+
+  .App-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .App-header p {
+    font-size: 0.9rem;
+  }
+
+  .App-link {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+  .App-header {
+    padding: 30px;
+  }
+
+  .App-logo {
+    height: 70px;
+  }
+
+  .App-header h1 {
+    font-size: 2.3rem;
+  }
+
+  .App-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .App-header p {
+    font-size: 1rem;
+  }
+
+  .App-link {
+    padding: 10px 18px;
+    font-size: 1rem;
+  }
+}

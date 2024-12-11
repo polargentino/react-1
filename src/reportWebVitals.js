@@ -1,13 +1,5 @@
-const reportWebVitals = onPerfEntry => {
-  if (onPerfEntry && onPerfEntry instanceof Function) {
-    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
-      getCLS(onPerfEntry);
-      getFID(onPerfEntry);
-      getFCP(onPerfEntry);
-      getLCP(onPerfEntry);
-      getTTFB(onPerfEntry);
-    });
+// src/reportWebVitals.js
+export default function reportWebVitals(metric) {
+    console.log(metric); // Puedes modificar esta función para manejar las métricas como quieras.
   }
-};
-
-export default reportWebVitals;
+  

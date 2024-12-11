@@ -1,48 +1,48 @@
-body {
-  font-family: Arial, sans-serif;
+/* App.css */
+
+/* Estilos generales para la aplicación */
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
 }
-.App-header {
+
+/* Separa cada componente con espacio */
+.App > * {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Asegúrate de que el pie de página esté al final de la página */
+.App-footer {
+  text-align: center;
+  padding: 20px 0;
   background-color: #282c34;
   color: white;
-  padding: 20px;
-  text-align: center;
+  font-size: 0.9rem;
 }
-.App-logo {
-  height: 40vmin;
+
+.App-footer p {
+  margin: 0;
 }
+
+/* Hacer que los enlaces sean más atractivos */
 .App-link {
   color: #61dafb;
-  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
 }
-.gallery {
-  padding: 20px;
+
+.App-link:hover {
+  color: #21a1f1;
 }
-.gallery-grid {
-  display: flex;
-  gap: 10px;
-}
-.gallery-grid img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 10px;
-}
-.about, .contact {
-  padding: 20px;
-}
-.contact form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.contact input, .contact textarea, .contact button {
-  padding: 10px;
-  font-size: 1rem;
-}
-.App-footer {
-  background-color: #20232a;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
+

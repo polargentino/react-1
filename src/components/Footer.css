@@ -1,0 +1,42 @@
+/* Footer.css */
+
+.App-footer {
+  background-color: #333; /* Fondo oscuro */
+  color: white; /* Texto blanco para buen contraste */
+  text-align: center; /* Centrar el texto */
+  padding: 20px;
+  font-family: 'Arial', sans-serif; /* Tipografía limpia y legible */
+  font-size: 1rem; /* Tamaño de fuente adecuado */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.App-footer p {
+  margin: 0; /* Eliminar márgenes del párrafo */
+  line-height: 1.5;
+}
+
+/* Media Queries para hacerlo responsivo */
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  .App-footer {
+    padding: 15px;
+  }
+
+  .App-footer p {
+    font-size: 0.9rem; /* Ajusta el tamaño de la fuente en móviles */
+  }
+}
+
+/* Para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+  .App-footer {
+    padding: 18px;
+  }
+
+  .App-footer p {
+    font-size: 1rem;
+  }
+}
