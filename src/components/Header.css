@@ -1,5 +1,14 @@
 /* Header.css */
 
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .App-header {
   background-color: #282c34;
   color: white;
@@ -11,6 +20,7 @@
 .App-logo {
   height: 80px;
   pointer-events: none;
+  animation: App-logo-spin infinite 10s linear; /* Añade esta línea para el giro */
 }
 
 .App-header h1 {
@@ -104,3 +114,4 @@
     font-size: 1rem;
   }
 }
+
