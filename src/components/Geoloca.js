@@ -38,41 +38,62 @@ function Geoloca() {
         alignItems: "center",
         minHeight: "100vh",
         padding: 2,
+        background: "linear-gradient(45deg, #0f2027, #203a43, #2c5364)", // Fondo futurista
       }}
     >
-      <Card sx={{ maxWidth: 400, width: "100%", padding: 2, textAlign: "center" }}>
+      <Card
+        sx={{
+          maxWidth: 500,
+          width: "100%",
+          padding: 3,
+          textAlign: "center",
+          borderRadius: "16px", // Bordes redondeados para estilo futurista
+          boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)", // Sombra sutil
+          background: "rgba(255, 255, 255, 0.1)", // Fondo translúcido para card
+        }}
+      >
         <CardContent>
-          <Typography variant="h5" gutterBottom>
+          <Typography variant="h4" gutterBottom sx={{ color: "#fff", fontWeight: "bold", fontFamily: "'Roboto', sans-serif" }}>
             Geolocalización
           </Typography>
 
           {loading ? (
-            <CircularProgress />
+            <CircularProgress size={50} sx={{ color: "#00bcd4" }} />
           ) : location ? (
             <Box>
-              <Typography variant="body1">
+              <Typography variant="body1" sx={{ color: "#fff", fontSize: "1.1rem" }}>
                 <strong>Latitud:</strong> {location.latitude}
               </Typography>
-              <Typography variant="body1">
+              <Typography variant="body1" sx={{ color: "#fff", fontSize: "1.1rem" }}>
                 <strong>Longitud:</strong> {location.longitude}
               </Typography>
             </Box>
           ) : error ? (
-            <Typography variant="body1" color="error">
+            <Typography variant="body1" color="error" sx={{ fontSize: "1.1rem" }}>
               {error}
             </Typography>
           ) : (
-            <Typography variant="body1">
+            <Typography variant="body1" sx={{ color: "#fff", fontSize: "1.1rem" }}>
               Haz clic en el botón para obtener tu ubicación.
             </Typography>
           )}
         </CardContent>
         <Button
           variant="contained"
-          color="primary"
+          color="secondary"
           onClick={getLocation}
           disabled={loading}
-          sx={{ marginTop: 2 }}
+          sx={{
+            marginTop: 2,
+            padding: "10px 20px",
+            fontSize: "1.2rem",
+            borderRadius: "8px",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
+            backgroundColor: "#ff4081", // Color vibrante
+            '&:hover': {
+              backgroundColor: "#e91e63", // Color al pasar el cursor
+            },
+          }}
         >
           Obtener ubicación
         </Button>

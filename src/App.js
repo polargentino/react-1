@@ -1,7 +1,7 @@
 // App.js
 import React from "react";
 import Header from "./components/Header";
-import Gallery from "./components/Gallery";
+//import Gallery from "./components/Gallery";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -10,14 +10,20 @@ import Geoloca from "./components/Geoloca";
 import Map from "./components/Map";
 import Quini from "./components/Quini";
 
+
+import BasicMasonry from './components/Mui';
+
+
 function App() {
   return (
     <div className="App">
       <Header />
       <Map />
-      <Gallery />
-      
+      {/*<Gallery />*/}
       <Geoloca />
+      <BasicMasonry />
+     
+     
       <About />
       <Reloj />
       <Contact />

@@ -1,61 +1,42 @@
 /* About.css */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+/* Estilos para la sección About, limitados solo a este componente */
 .about {
-    background-color: #f9f9f9; /* Color de fondo claro */
-    border-radius: 8px; /* Bordes redondeados */
-    padding: 20px;
-    max-width: 800px; /* Ancho máximo */
-    margin: 40px auto; /* Centrado y espacio alrededor */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    width: 100%; /* Asegura que el contenedor no exceda el ancho */
+  padding: 2rem;
+  text-align: center;
+  background-color: #121212;
+  color: #00FF00;
+  font-family: 'Press Start 2P', cursive; /* Aplicamos la fuente directamente a la clase */
+}
+
+/* Títulos dentro de .about */
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Párrafos dentro de .about */
+.about p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Estilos para hacer el componente responsivo */
+@media (max-width: 600px) {
+  .about {
+    padding: 1rem;
   }
-  
+
   .about h2 {
-    font-family: 'Arial', sans-serif; /* Tipografía limpia */
-    font-size: 2rem; /* Tamaño de fuente grande */
-    color: #333; /* Color oscuro para el texto */
-    margin-bottom: 20px; /* Espacio debajo del título */
-    text-align: center; /* Centrado del título */
+    font-size: 2rem;
   }
-  
+
   .about p {
-    font-family: 'Arial', sans-serif; /* Tipografía limpia */
-    font-size: 1.1rem; /* Tamaño de fuente cómodo */
-    color: #555; /* Color gris suave para el texto */
-    line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
-    text-align: justify; /* Alineación del texto */
+    font-size: 1rem;
   }
-  
-  /* Media Queries para hacerlo responsivo */
-  
-  /* Para pantallas pequeñas (móviles) */
-  @media (max-width: 600px) {
-    .about {
-      padding: 15px;
-      margin: 20px;
-    }
-  
-    .about h2 {
-      font-size: 1.5rem; /* Ajusta el tamaño del título */
-    }
-  
-    .about p {
-      font-size: 1rem; /* Ajusta el tamaño del párrafo */
-    }
-  }
-  
-  /* Para pantallas medianas (tablets) */
-  @media (max-width: 768px) {
-    .about {
-      max-width: 90%; /* Ajusta el máximo ancho en tablets */
-    }
-  
-    .about h2 {
-      font-size: 1.75rem; /* Ajusta el tamaño del título */
-    }
-  
-    .about p {
-      font-size: 1.05rem; /* Ajusta el tamaño del párrafo */
-    }
-  }
+}
+
   
