@@ -13,11 +13,13 @@ import Quini from "./components/Quini";
 
 import BasicMasonry from './components/Mui';
 
+import Gemini from "./components/Gemini";
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <Gemini />
       <Map />
       {/*<Gallery />*/}
       <Geoloca />

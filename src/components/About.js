@@ -24,7 +24,7 @@ justifyContent: "center",
 
 padding: 3,
 
-height: "100vh", // Ocupa la mitad de la pantalla
+height: "140vh", // Ocupa la mitad de la pantalla
 
 backgroundColor: "#000000", // Fondo negro puro
 
@@ -114,7 +114,7 @@ sx={{
 
 fontSize: { xs: "1.1rem", sm: "1.2rem" },
 
-marginTop: "20px",
+marginTop: "10px",
 
 whiteSpace: "pre-wrap",
 
@@ -122,7 +122,18 @@ whiteSpace: "pre-wrap",
 
 >
 
-{`> Listo para comenzar? Escribe "yes" para continuar...`}
+{`> Listo para comenzar? Escribe "yes" para continuar...
+*Un lienzo digital, sin brocha ni pincel,
+con código y diseño, un mundo virtual que crece.
+
+De píxeles y formas, una estética sutil,
+la web se despliega, bella y eficiente, que florece.
+
+Con clicks y scrolls, la magia se revela,
+un viaje de imágenes, que el alma conmueve y revela.
+
+En cada detalle, una función, una idea,
+el diseño web, un arte que guía y que crea.`}
 
 </Typography>
 
